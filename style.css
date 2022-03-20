@@ -143,12 +143,23 @@ main {
   margin: 0 auto;
 }
 
+.main--table-container {
+  display: flex;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
 .main--currency-table {
   width: 70%;
   min-width: 235px;
   max-width: 500px;
   height: 300px;
   margin: 0 auto;
+  margin-left: 42px;
+  margin-right: 21px;
+  scroll-snap-align: center;
   font-family: "Inter", sans-serif;
 }
 .main--currency-table .currency-table--title {
@@ -237,6 +248,9 @@ main {
   max-width: 500px;
   height: 300px;
   margin: 0 auto;
+  margin-left: 21px;
+  margin-right: 42px;
+  scroll-snap-align: center;
   font-family: "Inter", sans-serif;
 }
 .main--corridor-table .corridor-table--title {
@@ -444,6 +458,7 @@ main {
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
+  padding: 0 55px;
 }
 
 .plans-container--card {
